@@ -38,7 +38,7 @@ else:
     filetocheck = args.fromfile
     realfilename = filetocheck
 
-p = subprocess.Popen('/usr/bin/clamdscan --verbose --stdout --multiscan --fdpass'.split() + [filetocheck],
+p = subprocess.Popen('/usr/bin/clamdscan --verbose --stdout --multiscan --config-file /etc/clamd.conf --fdpass'.split() + [filetocheck],
                      stderr=subprocess.STDOUT,
                      stdout=subprocess.PIPE,
                      bufsize=8192,
