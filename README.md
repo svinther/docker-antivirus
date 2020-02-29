@@ -8,7 +8,7 @@ The response is in a legacy format, suitable for a proprietary application that 
 
 ## Usage
 
-    docker run -d -p 8080:80 svinther/docker-antivirus
+    docker run -d -p 8080:80 logiva/antivirus
 
 cURL example:
 
