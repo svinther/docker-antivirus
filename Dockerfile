@@ -15,7 +15,6 @@ RUN sed -i \
 /etc/clamav/clamd.conf
 
 COPY freshclam.conf /etc/clamav/freshclam.conf
-RUN freshclam
 
 ADD 30-start-clamd.sh /poorman-init.d/
 ADD 40-start-freshclam.sh /poorman-init.d/
